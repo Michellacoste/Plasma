@@ -123,12 +123,12 @@ void    plDebugInputInterface::RestoreDefaultKeyMappings( void )
 //  fControlMap->BindKey( KEY_SHIFT,    B_CONTROL_MODIFIER_FAST );
     fControlMap->BindKey( plShiftKeyCombo( KEY_EQUAL ),     B_CAMERA_DRIVE_SPEED_UP );
     fControlMap->BindKey( plShiftKeyCombo( KEY_DASH ),      B_CAMERA_DRIVE_SPEED_DOWN );
-    fControlMap->BindKey( KEY_W,                            B_CAMERA_MOVE_FORWARD );
-    fControlMap->BindKey( KEY_S,                            B_CAMERA_MOVE_BACKWARD );
-    fControlMap->BindKey( KEY_A,                            B_CAMERA_MOVE_LEFT );
-    fControlMap->BindKey( KEY_D,                            B_CAMERA_MOVE_RIGHT );
-    fControlMap->BindKey( KEY_I,                            B_CAMERA_MOVE_UP );
-    fControlMap->BindKey( KEY_K,                            B_CAMERA_MOVE_DOWN );
+    fControlMap->BindKey( plShiftKeyCombo( KEY_NUMPAD_ADD ), B_CAMERA_MOVE_FORWARD );
+    fControlMap->BindKey( plShiftKeyCombo( KEY_NUMPAD_SUBTRACT ), B_CAMERA_MOVE_BACKWARD );
+    fControlMap->BindKey( plShiftKeyCombo( KEY_LEFT ),      B_CAMERA_MOVE_LEFT );
+    fControlMap->BindKey( plShiftKeyCombo( KEY_RIGHT ),     B_CAMERA_MOVE_RIGHT );
+    fControlMap->BindKey( plShiftKeyCombo( KEY_UP ),        B_CAMERA_MOVE_UP );
+    fControlMap->BindKey( plShiftKeyCombo( KEY_DOWN ),      B_CAMERA_MOVE_DOWN );
 //  fControlMap->BindKey( KEY_C,                            B_TOGGLE_DRIVE_MODE );
 #endif
 }
