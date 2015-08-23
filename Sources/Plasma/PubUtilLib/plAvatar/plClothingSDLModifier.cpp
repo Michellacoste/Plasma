@@ -302,8 +302,7 @@ void plClothingSDLModifier::HandleSingleSDR(const plStateDataRecord *sdr, plClot
             {
                 uint8_t blend;
                 faceBlends->Get(&blend, i);
-                if (clothing)
-                    clothing->fSkinBlends[i] = (float)blend / 255;
+                clothing->fSkinBlends[i] = (float)blend / 255;
             }
         }       
     }
